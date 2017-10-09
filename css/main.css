@@ -1,0 +1,835 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+
+*{
+	margin: 0;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ffffff;
+	font-family: 'Alegreya Sans', sans-serif;
+	text-align: center;
+}
+
+
+img{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+/*--small underline--*/
+
+h2:after {
+  content:'';
+  display:block;
+  height:0.2em;
+  width:40px;
+  margin:auto;
+  border-bottom:solid;
+  padding-top: 1%;	
+  color: #008080;
+}
+
+.services p,
+.porque p,
+.equipamento p,
+.portfolio p{
+	font-size: 1rem;
+	color: #737373;
+	line-height: 1.8em;
+}
+
+.clearfix{
+	clear: both;
+}
+
+/*-- Navigation menu--*/
+
+header{
+	height: 90px;
+	width: 100%;
+	top: 0;
+}
+.header-inner{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header-top{
+	width: 100%;
+	height: 0 auto;
+	background: #f2f2f2;
+	overflow: hidden;
+}
+.header-top .header-row{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header-top ul{
+	margin: 10px 0 10px 0;
+	line-height: 20px
+}
+.header-top ul li{
+	display: inline-block;
+	float: right;
+	padding: 0 20px 10px 0;
+}
+.header-top li i{
+	font-size: 1.2em;
+	color: #008080;
+	padding: 10px 12px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 1px solid #a6a6a6;
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+	
+}
+.header-top li i:hover{
+	background: #329999;
+	color: #fff;
+}
+.header-row .call-phone {
+	float:left;
+}
+.header-row .call-phone i{
+	margin:12px 0 0 10px;
+	font-size: 1rem;
+	color: #008080;
+}
+.phone{
+	color: #595959;
+	font-weight: 500;
+	font-size: 0.875rem;
+}
+.logo{
+	float: left;
+	width: 200px;
+	margin: 16px 0 20px 10px;
+	height: 0 auto;
+}
+#menu-icon{
+	display: hidden;
+	width: 35px;
+	height: 35px;
+	background: url(../img/icon/nav-dark.png) center;
+}
+nav{
+	float: right;
+	margin: 26px 10px 0px 0px;
+}
+ul{
+	list-style: none;
+}
+nav ul li{
+	font-family: 'Alegreya Sans', sans-serif;
+	display: inline-block;
+	padding: 10px;	
+}
+
+nav ul li a{
+	color: #595959;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.current{
+	color: #fff;
+	background: #008080;
+	padding: 10px 10px;
+	border-radius: 5px;
+	border-bottom: none;
+}
+.current:hover{
+	color: #fff;
+}
+
+nav ul li a:hover{
+	color: #008080;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+	#menu-icon{
+		display: inline-block;
+	}
+	nav:hover ul{
+		display: block;
+	}
+	nav{
+	margin: 20px 10px 0px 0px;
+	}
+	nav ul{
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		padding: 20px;
+		background: #F5F5F5;
+		border: 1px solid #008080;
+		right: 20px;
+		width: 50%;
+		border-radius: 3px 0 3px 3px;
+		opacity: .95;
+	}
+	nav li{
+		text-align: center;
+		 width: 100%;
+		 padding: 15px 0;
+		 margin: 0;
+	}
+	.header-top{
+		display: none;
+	}
+	.logo{
+		width: 150px;
+	}
+	.focus{
+		padding: 5px 0;
+	}
+	.focus h3{
+	font-size: 1rem;
+  	}
+}
+/*--- End nav---*/
+/*-- Carousel---*/
+.slide{
+	background: url('../img/b1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+
+}
+.carousel-caption{
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-caption h3{
+	font-size: 2.5rem;
+	font-weight: 900;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+	font-family: 'Marcellus SC', serif;
+
+}
+.carousel-caption a{
+	text-decoration: none;
+	color: #fff;
+}
+.button{
+    display: inline-block;
+    height: auto;
+    width: 10em;
+    line-height: 4.0rem;
+    color: #f2f2f2;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: #008080;
+    text-transform: uppercase;
+    font-weight: 800;  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s; 
+}
+.button:hover{
+    text-decoration: none;
+    background: #006666;
+    color: #f2f2f2;
+}
+/*--- Serviços---*/
+
+.services{
+	padding: 5% 0;
+	text-align: center;
+}
+.col-lg-4 {
+	margin-bottom: 1.2%;
+}
+.services h2{
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+	color: #262626;
+}
+.services h3{
+	font-size: 1rem;
+	color: #008080;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.services .one,
+.porque .one{
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 3% 0;
+}
+
+.imsaqa{
+	font-weight: 800;
+
+}
+.services i{
+	font-size: 200%;
+	margin: 4%;
+	padding: 20px 20px;
+	border-radius: 5rem;
+	background: rgb(211, 215, 218);;
+	color: #008080;
+}
+.services h3{
+	margin-bottom: 3%;
+}
+
+.services .button{
+	margin-top: 2%;
+}
+@media screen and (max-width: 768px){
+	.services{
+		margin-top: 3rem;
+	}
+	.services .button{
+		font-size: 1rem;
+	}
+	.services .one,
+	.porque .one{
+		max-width: 500px;
+	}
+}
+
+/*--- Parallax---*/
+
+.parallax{
+	background: url(../img/parallax.jpg) no-repeat fixed 100%;
+	background-size: cover;
+	text-align: center;
+}
+	
+.parallax-inner{
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+/*--- Porque Imsaqa---*/
+.porque{
+	padding: 5% 0;
+	text-align: center;
+	background: #f2f4f6;
+}
+.porque h2{
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+	color: #262626;
+}
+.porque h3{
+	font-size: 1.5rem;
+	color: #008080;
+	font-weight: 600;
+	margin: 2% 0;
+}
+
+.imsaqa-one{
+	font-weight: 600;
+	font-family: 'Aclonica', sans-serif;
+	font-size: 1.5rem;
+	color: #008080;
+}
+.porque i{
+	font-size: 4rem;
+	margin: 1px 0;
+	color: #008080;
+}
+
+.container-fluid p{
+	font-size: 1.5rem;
+	color: #262626;
+}
+@media screen and (max-width: 768px){
+	.porque{
+		margin-top: 3rem;
+	}
+	.porque i{
+	font-size: 6rem;
+	}
+
+	.container-fluid p{
+	font-size: 1.6rem;
+	}
+	.porque h3{
+	font-size: 1.7rem;
+	}
+	
+}
+
+/*--- Missao--*/
+.parallax-one{
+	background: url(../img/estrategia_web.jpg) no-repeat fixed 100%;
+	background-size: cover;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.parallax-inner-one h1{
+	color: #fff;
+	padding: 3% 0;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+.parallax-inner-one i{
+	color: #f39c12;
+	font-size: 20px;
+}
+.parallax-one .btn{
+	font-size: 1.5rem;
+	padding: 0.6rem 0.8rem;
+	text-transform: uppercase;
+	background: #008080;
+	cursor: pointer;
+	font-weight: 800;
+	border: 1px solid #008080 ! important;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s; 
+}
+.btn:hover{
+    text-decoration: none;
+    background: #006666 !important;
+    border: 1px solid #006666 ! important;
+}
+@media screen and (max-width: 768px){
+	.parallax-inner-one h1{
+	font-size: 1.5rem;
+	}
+	.parallax-one .btn{
+	font-size: 1rem;
+	}
+	
+}
+
+/*--footer--*/
+
+.footer-contactos{
+	padding: 5rem 0;
+}
+.footer-contactos .container{
+	padding: 5rem 0 2rem 0;
+}
+
+.footer-contactos h2{
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+	color: #262626;
+}
+.footer-contactos h4{
+	margin-top: 50px;
+	text-align: left;
+	font-size: 1.2rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+	color: #262626;
+	margin-bottom: 1.1em;
+}
+.footer-contactos p{
+	color: #737373;
+	text-align: left;
+	padding: 0.1rem 0;
+	font-size: 1.1rem;
+}
+
+.footer-contactos i{
+	color: #008080;
+	font-size: 1.3rem;
+}
+@media screen and (max-width: 768px){
+	.footer-contactos{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.footer-contactos h4,
+	.footer-contactos p{
+		text-align: center;
+	}
+	.footer-contactos iframe{
+		width: 100%;
+	}
+}
+/*---footer---*/
+footer{
+	width: 100%;
+	background: #003333;
+	overflow: hidden;
+	padding: 3% 0;
+}
+footer h2{
+	color: #999999;
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+}
+.social li{
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.social i{
+    font-size: 1.7rem;
+    color: #008080;
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: 1px solid #008080;
+    background: #f2f2f2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s; 
+}
+.social i:hover{
+	background: #008080;
+	color: #f2f2f2;
+}
+footer p{
+	color: #808080;
+}
+.ivan{
+	color: #cccccc;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s; 
+
+}
+
+.up a{
+	color: #bfbfbf;
+	float: right;
+	font-size: 1rem;
+	background: #8c8c8c;
+	border-radius: 50%;
+	padding: 10px 13px;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s; 
+}
+.up a:hover{
+	color: #ff8c1a;
+	background: #bfbfbf;
+}
+.ivan:hover{
+	color: #ff9933;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+	img{
+		width: 100%;
+		text-align: center;
+	}
+	footer{
+		width: 100%;
+	}
+}
+/*---------------------- START SOBRE NOS ---------------------------*/
+
+.wrap-container{
+	width: 100%;
+	height: 0 auto;
+	background: #008080;
+	overflow: hidden;
+	padding: 45px 0;
+}
+.wrap-container-one{
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+.wrap-container-one h3{
+	color: #fff;
+	float: left;
+	padding-left: 1rem;
+	font-size: 1.5rem;
+}
+.empresa{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+
+.empresa h2{
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+	color: #262626;
+}
+.container-box{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 3rem 0;
+}
+
+.container-box article{
+	width: 50%;
+	float: left;
+	padding: 1rem 0;
+
+}
+.container-box h3{
+	font-size: 1.1rem;
+	font-weight: 700;
+	padding-left: 2rem;
+	color: #008080;
+	text-align: left;
+	text-transform: uppercase;
+}
+.container-box p{
+	font-size: 1rem;
+	text-align: justify;
+	padding: 2rem 2rem;
+	color: #737373;
+}
+
+.container-box aside{
+	float: left;
+	width: 50%;
+}
+@media screen and (max-width: 768px){
+	.wrap-container-one h3{
+	font-size: 1.1rem;
+	}
+	.container-box h3{
+	font-size: 1.1rem;
+	}
+	.wrap-container{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.wrap-top{
+		width: 100%;
+		margin: 4% 0;
+	}
+	.wrap-top{
+		width: 100%;
+		padding: 0;
+	}
+	.container-box{
+		width: 100%;
+		padding: 3% 0;
+	}
+	.wrap-top article{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.wrap-top h3{
+		font-size: 120%;
+	}
+	.wrap-top p{
+		font-size: 110%;
+	}
+	.wrap-top aside{
+		width: 100%;
+	}
+	.row{
+		width: 100%;
+	}
+
+}
+
+/*--- clientes ---*/
+.clients {
+	padding: 5% 0;
+}
+
+.clients h2{
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+	color: #262626;
+}
+
+.clients .container{
+	padding: 4rem 0;
+}
+
+/*----------------------START SERVICES - EQUIPMENT--------------------*/
+
+.equipamento {
+	padding: 5% 0;
+}
+.equipamento h2{
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+	color: #262626;
+}
+.equipamento p{
+	margin-top: 2%;
+}
+.wrap-top{
+	max-width: 1200px;
+	padding: 3rem 0;
+	height: 0 auto;
+	margin: 0 auto;
+	text-align: center;
+}
+.left-col{
+	float: left;
+	width: 50%;
+	height: 0 auto;
+	text-align: justify;
+	margin-top: 5rem;
+	padding: 0 1rem;
+}
+
+.left-col h4{
+	color: #595959;
+	font-size: 1.1rem;
+	font-weight: 700;	
+}
+.left-col p{
+	color: #737373;
+	font-size: 100%;
+}
+.sidebar{
+	float: right;
+	width: 50%;
+}
+.img-topright{
+	width: 500px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 9%;
+	margin-bottom: 10%;
+}
+@media screen and (max-width: 768px){
+	.equipamento{
+		width: 100%;
+	}
+	.wrap-top{
+		width: 100%;
+	}
+	.left-col{
+		width: 100%;
+	}
+	.sidebar{
+		width: 100%;
+	}
+	.img-topright{
+		width: 100%;
+	}
+	.sidebar img{
+		width: 100%;
+	}
+}
+
+/*------------START PORTFOLIO -----------------*/
+.container-fluid{
+	padding-top: 30px;
+}
+.container-fluid h2{
+	padding: 5% 0 2% 0;
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+	color: #262626;
+}
+
+.container-fluid a:hover{
+	text-decoration: none;
+
+}
+.portfolio-amostra{
+	margin: 30px 0;
+}
+.filter-button {
+   	font-size: 1.1rem;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #000;
+}
+
+.filter-button:hover{
+    background: #00a7a7;
+    color: #f2f2f2;
+}
+
+.btn-default:active .filter-button:active{
+    background-color: #42B32F;
+    color: white;
+}
+
+
+.gallery_product{
+	margin-bottom: 30px;
+	width: 320px;
+	height: 320px;
+}
+
+.btn-default:active .filter-button:active{
+    background-color: #42B32F;
+    color: white;
+}
+.container img:hover{
+	opacity: 0.5;
+	transition: 0.7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
